@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3164ff;
+}
+.wrapper{
+    height: 250px;
+    width: 510px;
+    background-color: #fff;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    padding: 70px 40px;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 45%;
+}
+input{
+    padding: 20px;
+    height: 30px;
+    margin-top: 5px;
+    outline: none;
+}
+input:focus{
+    border-color: #3164ff;
+}
+@media(min-width:320px) and (max-width:480px){
+    .wrapper{
+        width: 90%;
+        padding: 40px 20px;
+        display: block;
+        font-weight: bold;
+    }
+    .container{
+        margin-top: 30px;
+        width: 10%;
+    }
+    input{
+        padding: 10px;
+        height: 25px;
+
+    }
+    #celsius{
+        margin-left: 19px;
+    }
+    #Farenheit{
+        margin-left: 19px;
+    }
+    label{
+        margin-left: 19px;
+    }
+}
